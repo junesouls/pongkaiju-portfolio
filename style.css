@@ -1,0 +1,114 @@
+.container {
+    text-align: center;
+}
+
+#logo {
+    position: relative; 
+    top: 20px;
+    width: 800px;
+    user-select: none; 
+    margin: 0 auto; 
+}
+
+#play-image {
+    position: relative; 
+    max-width: 200px; 
+    height: auto; 
+    margin: 20px auto 0; 
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+#play-image:hover{
+    transform: translateY(10px);
+}
+
+#devig {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 50px;
+    height: auto;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+#devig:hover{
+    transform: translateY(-10px);
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+.navbar {
+    visibility: hidden;
+}
+
+.select{
+    text-align: center;
+    color: #dd4141;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 100px;
+    cursor: default;
+    user-select: none;
+}
+.boot{
+    position: absolute;
+    font-size: 20px;
+    bottom: 0;
+    left:1px;
+    padding: 12px;
+    color: #ffffff;
+    font-family: 'Pixelify Sans', sans-serif;
+    cursor: pointer;
+
+
+}
+.normal{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+.normal-container {
+    display: flex; 
+    align-items: center; 
+    text-align: left; 
+    margin-left: 50px; 
+}
+.normal::before {
+    content: ">"; 
+    color: #dd4141; 
+    margin-right: 10px; 
+}
+
+.normal:hover{
+    transform: translateY(-5px);
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+.navbar {
+    visibility: hidden;
+}
+a:visited {
+    color: white; 
+}
+
+

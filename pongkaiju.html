@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Kaiju</title>
+    <style>
+        body { 
+          background: black; 
+        }
+      </style>
+      <link rel="stylesheet" type="text/css" href="kaijupong.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pixelify+Sans">
+      <link rel="shortcut icon" type="x-icon" href="kaiju.jpg">
+      
+</head>
+<body>
+
+  <audio id="paddleHitSound" src="./Music and sound effect/ponghit.mp3"></audio>
+    <audio id="borderHitSound" src="./Music and sound effect/bump.mp3"></audio>
+    <audio id="scoreSound" src="./Music and sound effect/score.mp3"></audio>
+
+  <audio id="bgmusic" src="./Music and sound effect/Cave Story Arranged - Running Hell (Newer Version).mp3"></audio>
+  <audio id="roar" src="./Music and sound effect/heisei Godzilla roar 1-[AudioTrimmer.com].mp3"></audio>
+  <audio id="kaijuhurt" src="./Music and sound effect/Hit Marker sound effect.mp3"></audio>
+  <audio id="hurt" src="./Music and sound effect/Rock Smash Sound Effect.mp3"></audio>
+  <audio id="firecast" src="./Music and sound effect/Fire Starting Sound Effect.mp3"></audio>
+  <audio id="firelaunch" src="./Music and sound effect/FIRE WHOOSH TRANSITION SOUND EFFECTS.mp3"></audio>
+  <audio id="laserchrage" src="./Music and sound effect/laserchage.mp3"></audio>
+  <audio id="laserfire" src="./Music and sound effect/laserfire.mp3"></audio>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pixelify+Sans">
+    <img src="./img/kaijuidle.jpg"alt="idle"class="hover"id="kaijuImage">
+    <img src="./img/kaijufireball.jpg"alt="atack1"class="fire"id="kaijufire">
+    <img src="./img/kaijucharge.jpg"alt="atack1"class="hover"id="kaijubeam">
+
+
+<div id="container">
+    <canvas id="gamebox" width="1200" height="600"></canvas>
+    <div id="ponglogo">Pong Kaiju</div>
+    <div id="pongmusic">🎵 Music by DM DORUKO</div>
+    <button id="startButton" class="custom-button">Ready</button>
+    <div id="black-rectangle"></div>
+    <img src="./img/wsside.jpg"alt="controlws"id="ws">
+    <p class ="boot"><a href="sedif.html">Back</a></p>
+    <script src="gamekaiju.js"></script>
+
+</div>
+
+</body>
+</html>

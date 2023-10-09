@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Aiju</title>
+    <link rel="stylesheet" type="text/css" href="aigame.css">
+    <link rel="shortcut icon" type="x-icon" href="kaiju.jpg">
+</head>
+<body>
+    <audio id="paddleHitSound" src="./Music and sound effect/ponghit.mp3"></audio>
+    <audio id="borderHitSound" src="./Music and sound effect/bump.mp3"></audio>
+    <audio id="scoreSound" src="./Music and sound effect/score.mp3"></audio>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pixelify+Sans">
+    <div id="ponglogo">Pong Kaiju (ai)</div>
+    <div id="gamebox-container">
+        <canvas id="gamebox" width="1200" height="600"></canvas>
+        <div class="difficulty-buttons">
+            <button id="normalButton" class="custom-button">Normal</button>
+            <button id="hardButton" class="custom-button">Hard</button>
+            <button id="masterButton" class="custom-button">Master</button>
+        </div>
+        <div id="score-container">
+            <div id="scoretext"></div>
+        </div>
+    </div>
+    <div id="countdown" style="display: none; font-size: 3rem; color: white;"></div>
+
+    <button id="resetButton" class="custom-button below-canvas">Reset</button>
+    <p class ="boot"><a href="sedif.html">Back</a></p>
+    <script src="Aipong.js" type="module"></script>
+    <img src="./img/wspong.jpg"alt="W and S paddle control"class="controlleft">
+</body>
+</html>

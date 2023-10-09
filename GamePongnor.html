@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong Ping</title>
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <link rel="shortcut icon" type="x-icon" href="kaiju.jpg">
+</head>
+<body>
+    <audio id="paddleHitSound" src="./Music and sound effect/ponghit.mp3"></audio>
+    <audio id="borderHitSound" src="./Music and sound effect/bump.mp3"></audio>
+    <audio id="scoreSound" src="./Music and sound effect/score.mp3"></audio>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pixelify+Sans">
+    <div id="ponglogo">Pong Kaiju</div>
+    <div id="gamebox-container">
+        <canvas id="gamebox" width="1200" height="600"></canvas>
+        <button id="startButton" class="custom-button">Ready</button>
+    </div>
+    <div id="score-container">
+        <div id="scoretext"></div>
+    </div>
+    <div id="countdown"></div>
+    <button id="resetButton" class="custom-button below-canvas">Reset</button>
+    <p class ="boot"><a href="sedif.html">Back</a></p>
+    <script src="script.js" type="module"></script>
+    <img src="./img/wspong.jpg"alt="W and S paddle control"class="controlleft">
+    <img src="./img/arrowc.jpg"alt="Arrow key paddle control"class="controlright">
+</body>
+</html>
