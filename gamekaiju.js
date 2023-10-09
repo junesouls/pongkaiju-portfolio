@@ -76,7 +76,7 @@ function fadeout() {
 
 function updateKaijuImage() {
   const kaijuFire = document.getElementById('kaijufire');
-  if (kaijuHP < 23) {
+  if (kaijuHP < 24) {
     fadeout();
     kaijuFire.style.display = 'block';
   }
