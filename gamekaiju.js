@@ -8,7 +8,7 @@ const paddleHeight = 80;
 const paddleOffsetX = 30;
 
 let playerHP = 4;
-let kaijuHP = 25;
+let kaijuHP = 20;
 
 const ballSize = 5;
 let ballX = canvasWidth - ballSize;
@@ -76,7 +76,7 @@ function fadeout() {
 
 function updateKaijuImage() {
   const kaijuFire = document.getElementById('kaijufire');
-  if (kaijuHP < 24) {
+  if (kaijuHP < 18) {
     fadeout();
     kaijuFire.style.display = 'block';
   }
@@ -196,7 +196,7 @@ function fireballAttack() {
   const baseInterval = 700;
   const fireballCastInterval = baseInterval + (kaijuHP * 100);
 
-  if (kaijuHP < 24 && currentTime - lastFireballCastTime >= fireballCastInterval) {
+  if (kaijuHP < 18 && currentTime - lastFireballCastTime >= fireballCastInterval) {
     lastFireballCastTime = currentTime;
     fireLaunchSound.currentTime = 0;
     fireLaunchSound.play();
