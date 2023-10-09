@@ -196,7 +196,7 @@ function fireballAttack() {
   const baseInterval = 700;
   const fireballCastInterval = baseInterval + (kaijuHP * 100);
 
-  if (kaijuHP <= 23 && currentTime - lastFireballCastTime >= fireballCastInterval) {
+  if (kaijuHP < 24 && currentTime - lastFireballCastTime >= fireballCastInterval) {
     lastFireballCastTime = currentTime;
     fireLaunchSound.currentTime = 0;
     fireLaunchSound.play();
